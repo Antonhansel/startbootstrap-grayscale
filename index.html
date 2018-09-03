@@ -172,13 +172,12 @@
           <div class="col-md-10 col-lg-8 mx-auto text-center">
 
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Contactez nous et testez votre idée en moins de 90 jours!</h2>
+            <h2 class="text-white mb-5" id="formText">Contactez nous et testez votre idée en moins de 90 jours!</h2>
 
-            <form class="form-inline d-flex" onsubmit="submitForm()">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="email ou téléphone">
+            <form class="form-inline d-flex" id="mailForm" onsubmit="return submitForm()">
+              <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="email ou téléphone">
               <button type="submit" class="btn btn-primary mx-auto">Go !</button>
             </form>
-
           </div>
         </div>
       </div>
@@ -280,6 +279,18 @@
   }();
   drift.SNIPPET_VERSION = '0.3.1';
   drift.load('gtsy996ug4x6');
+  </script>
+  <script>
+    function submitForm() {
+      $.post("https://docs.google.com/forms/d/e/1FAIpQLSeBMZNkxZQ-2Yxq8LAF-8ytHR3eLta5r3m457g1yFr_665gSQ/formResponse",
+      {
+        "entry.1022065587": document.getElementById("inputEmail").value,
+      },
+      function(data, status){
+      });
+      document.getElementById("formText").innerHTML = "C'est noté ! Nous vous recontacterons dans les plus bref délais !";
+      return false;
+    }
   </script>
   <!-- End of Async Drift Code -->
   </body>
