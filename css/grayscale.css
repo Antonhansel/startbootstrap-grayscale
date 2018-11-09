@@ -308,6 +308,6 @@ a:focus, a:hover {
   color: #64a19d !important;
 }
 
-.footer {
-  margin: 5rem 0;
+footer {
+  padding: 5rem 0;
 }
