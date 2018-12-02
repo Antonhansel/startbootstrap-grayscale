@@ -2566,14 +2566,14 @@ button.button {
 .header-07__img, .header-23__img, .header-24__img, .header-25__img, .header-58__img {
   position: relative;
   z-index: 10;
-  max-height: 500px;
-  min-height: 350px;
-  min-width: 350px;
+  max-height: 300px;
+  min-height: 250px;
+  min-width: 250px;
   max-width: 100%;
   text-align: center; }
   @media (max-width: 600px) {
     .header-07__img, .header-23__img, .header-24__img, .header-25__img, .header-58__img {
-      max-height: 300px; } }
+      max-height: 200px; } }
 
 .header-08, .header-59 {
   position: relative;
@@ -10307,7 +10307,7 @@ button.button {
     text-decoration: underline; }
 
 .features-01 {
-  padding: 70px 0 40px; }
+  padding: 20px 0 40px; }
 
 .features-01__title_box {
   text-align: center; }
