@@ -93,6 +93,7 @@ textarea:focus {
   .container--premid {
     max-width: 750px; }
   .container--mid {
+    padding: 0 0px !important;
     max-width: 900px; }
   /* .container--large {
     max-width: 1200px; } */
@@ -2538,12 +2539,13 @@ button.button {
     .header-07__left, .header-23__left, .header-24__left, .header-25__left, .header-58__left {
       width: 100%;
       margin-left: auto;
+      padding-top: 0px;
       margin-right: auto;
       text-align: center; } }
 
 .header-07__text, .header-23__text, .header-24__text, .header-25__text, .header-58__text {
   max-width: 80%; 
-  padding-left: 65px;}
+  padding-left: 80px;}
   @media (max-width: 1020px) {
     .header-07__text, .header-23__text, .header-24__text, .header-25__text, .header-58__text {
       margin-left: auto;
@@ -11713,7 +11715,7 @@ button.button {
   border-radius: 999px;
   border: 1px solid #eee;
   background-color: white;
-  font-family: monospace; }
+  font-family: "Montserrat"; }
   @media (max-width: 760px) {
     .steps-01__number {
       left: -34px; } }
